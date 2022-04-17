@@ -157,33 +157,29 @@ nav{
     font-size: 20px;
     float: center;
 }
-.keis_1 h2{
-    width: 0%;
-    margin: 0px 0px 0px 0px;
-    margin-top: 260px;
-    font-size: 30px;
+.keis_1 {
+    width: 360px;
     float: left;
+    margin: 280px 40px 0px 0px;
+}
+.keis_1 h2{
+    margin: 30px 130px 20px 0px;
+    font-size: 30px;
 }
 .keis_1 a{
-    width: 0%;
-    margin: 0px 0px 0px 0px;
-    margin-top: 300px;
+    margin: 0px 0px 0px 50px;
     font-size: 20px;
-    float: left;
 }
 .keis_2 h3{
-    width: 80%;
     font-size: 20px;
-    margin: 15px 0px 0px 0px;
-    float: left;
-    text-align: right;;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
 }
 .keis_2>h3{
-    width: 74%;
-    font-size: 40px;
-    margin: 240px 0px 0px 0px;
-    float: left;
-    text-align: right;
+    font-size: 30px;
+    margin: 0px 160px 20px 0px;
+    margin-top: 300px;
+    text-align: center;
 }
 .keis ul{
     margin: 20px;
