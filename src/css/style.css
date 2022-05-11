@@ -6,6 +6,7 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -14,6 +15,14 @@ nav{
     line-height: 60px;
     padding-left: 200px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+
+main{
+    width: 100%;
+    height: 100%;
 }
 
 .menu{
@@ -28,6 +37,49 @@ nav{
     margin-right: 20px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.5s ease forwards;
+    -o-animation: topshift 0.5s ease forwards;
+    animation: topshift 0.5s ease forwards;
+    opacity: 0;
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+.menu li a{
+    transition: all 0.1s;
+    color: #fff;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: #fff;    
+}
+
+.menu li a:hover{
+    color: #FF730F;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
 }
 
 .main{
@@ -41,6 +93,13 @@ nav{
     margin: 432px 0px 0px 500px;
     color: #fff;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlenove 1s ease forwards;
+    -o-animation: titlenove 1s ease forwards;
+    animation: titlenove 1s ease forwards; 
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 .title__container h1{
@@ -51,7 +110,7 @@ nav{
 .title__container h4{
     margin-top: 40px;
     font-size: 22px;
-    color: #79818a;
+    color: #fff;
 }
 
 .title__container input{
@@ -60,10 +119,55 @@ nav{
     border: 3px solid #6d7682;
     background: none;
     border-radius: 8px;
-    color: #6d7682;
+    color: #fff;
     font-size: 15px;
     padding: 0px 20px;
     margin: 40px 10px 0px 0px;
+}
+
+.title__container input{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title__container input:active{
+    transform: scale(1.1);
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0p; 
+    }
+}
+
+@keyframes titlenove{
+    from{
+        opacity: 0;
+        margin-top: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0p; 
+    }
 }
 
 .prezent{
@@ -72,28 +176,43 @@ nav{
     float: left;
     margin:  5px 0px 0px 0px;
     text-align: center;
-    background: url(../img/doski.jpg)
+    background: url(../img/doski.jpg);
 }
+        
 .prezent h2{
     margin-top: 40px;
     font-size: 40px;
     text-decoration: underline;
     text-transform: uppercase; 
 }
+
 .prezent img{
-    
      border: 1px dashed #000;
      border-radius: 50%;
      width: 150px;
      height: 150px;
      overflow: hidden;
      margin: 60px;
-     padding: 1%;
+     padding: 10%;
      box-sizing: border-box;
+    -webkit-animation: prezen 2s ease forwards;
+    -o-animation: prezen 2s ease forwards;
+    animation: prezen 2s ease forwards; 
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+    opacity: 0;
 }
 .prezent h4{
     font-size: 20px;
     margin:  0px 10px 20px 0px;
+    -webkit-animation: prezen 2s ease forwards;
+    -o-animation: prezen 2s ease forwards;
+    animation: prezen 2s ease forwards; 
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+    opacity: 0;
 }
 .prezent input{
     height: 40px;
@@ -105,6 +224,32 @@ nav{
     font-size: 20px;
     padding: 0px 16px;
     margin: 50px 10px 0px 10px;
+    -webkit-animation: prezen 0.5s ease forwards;
+    -o-animation: prezen 0.5s ease forwards;
+    animation: prezen 0.5s ease forwards; 
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.prezent input{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.prezent input:hover{
+    background: #BDEDEB;
+    color: white;
+}
+.prezent input:active{
+    transform: scale(1.1);
+}
+@keyframes prezen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .skill{
     width: 100%;
@@ -112,7 +257,7 @@ nav{
     float: left;
     margin:  5px 0px 0px 0px;
     text-align: center;
-    background: url(../img/mramor.jpg);
+    background: url(../img/mramor.jpg)
 }
 .skill h2{
     margin-top: 100px;
@@ -124,11 +269,10 @@ nav{
     line-height: 50px;
     padding-left: 150px;
     float: left;
-    
     margin: 60px 0px 0px 0px;
     font-size: 20px;
-    
 }
+
 .skill p{
     font-size: 100px;
     line-height: 100px;
@@ -166,18 +310,30 @@ nav{
     margin: 30px 130px 20px 0px;
     font-size: 30px;
 }
-.keis_1 a{
+.keis_1 h1{
     margin: 0px 0px 0px 50px;
     font-size: 20px;
 }
+.keis_1 a{
+    margin: 0px 0px 0px 50px;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+}
+.keis_1 a:active{
+    color: green;
+}
+.keis_1 a:hover{
+    background-color: #60abf8;
+}
 .keis_2 h3{
     font-size: 20px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
     text-align: center;
 }
 .keis_2>h3{
     font-size: 30px;
-    margin: 0px 160px 20px 0px;
+    margin: 0px 160px 30px 0px;
     margin-top: 300px;
     text-align: center;
 }
@@ -252,6 +408,17 @@ nav{
 .contact>input{
     text-align: center;
     margin: 0px 0px 0px 0px;
+}
+.contact input{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.contact input:hover{
+    background: #6ED3B5;
+    color: white;
+}
+.contact input:active{
+    transform: scale(1.1);
 }
 .contact textarea{
     margin: 50px;
