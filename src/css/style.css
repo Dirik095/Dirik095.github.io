@@ -187,7 +187,7 @@ main{
 }
 
 .prezent img{
-     border: 1px dashed #000;
+     border: 2px dashed #000;
      border-radius: 50%;
      width: 150px;
      height: 150px;
@@ -369,6 +369,7 @@ main{
     float: left;
     margin:  5px 0px 0px 0px;
     text-align: center;
+    background-attachment: fixed;
     background: url(../img/graphic-1714230_1280.png)
 }
 .statistics h2{
